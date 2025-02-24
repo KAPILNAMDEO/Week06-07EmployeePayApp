@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+employeedb.mv.db
+data/employeedb.mv.db

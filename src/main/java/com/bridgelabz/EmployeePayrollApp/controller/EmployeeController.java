@@ -1,5 +1,6 @@
 package com.bridgelabz.EmployeePayrollApp.controller;
 
+import com.bridgelabz.EmployeePayrollApp.dto.EmployeeDTO;
 import com.bridgelabz.EmployeePayrollApp.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +12,7 @@ import java.util.List;
 
 
 @RestController
+
 @RequestMapping("/employees")
 class EmployeeController {
     @Autowired
@@ -23,12 +25,13 @@ class EmployeeController {
     public Employee getEmployeeById(@PathVariable Long id) { return service.getEmployeeById(id); }
 
     @PostMapping
-    public Employee createEmployee(@RequestBody Employee employee) { return service.saveEmployee(employee); }
+    public Employee createEmployee(@RequestBody EmployeeDTO employeeDTO) {
+        return service.saveEmployee(employeeDTO);
+    }
 
     @PutMapping("/{id}")
-    public Employee updateEmployee(@PathVariable Long id, @RequestBody Employee employee) {
-        employee.setId(id);
-        return service.saveEmployee(employee);
+    public Employee updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeDTO) {
+        return service.updateEmployee(id, employeeDTO);
     }
 
     @DeleteMapping("/{id}")
