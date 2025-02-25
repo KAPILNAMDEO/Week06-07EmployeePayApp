@@ -24,11 +24,11 @@ class EmployeeController {
     @GetMapping("/{id}")
     public Employee getEmployeeById(@PathVariable Long id) { return service.getEmployeeById(id); }
 
-    /*
+
     @PostMapping
     public Employee createEmployee(@RequestBody EmployeeDTO employeeDTO) {
         return service.saveEmployee(employeeDTO);
-    }*/
+    }
 
     @PutMapping("/{id}")
     public Employee updateEmployee(@PathVariable Long id, @RequestBody EmployeeDTO employeeDTO) {

@@ -15,7 +15,7 @@ import java.util.concurrent.atomic.AtomicLong;
 @Service
 public class EmployeeService {
     //uc2
-    /*
+
     @Autowired
     private EmployeeRepository repository;
 
@@ -46,14 +46,14 @@ public class EmployeeService {
         repository.deleteById(id);
     }
 
-    */
+
 
 
 
 
     /* UC-03 Ability for the Services Layer to store the Employee Payroll Data - Note that Services Layer is not storing, updating
 or deleting Employee Payroll Data in UC 2.- In this use case the Services Layer will store this Data in a Memory as a List. As we go further
-down we will persist this data in DB.*/
+down we will persist this data in DB.
 
     private final List<Employee> employeeList = new ArrayList<>();
     private final AtomicLong idCounter = new AtomicLong(1); // Generates unique IDs
@@ -91,7 +91,7 @@ down we will persist this data in DB.*/
     }
 
     // As we go further
-    //down we will persist this data in DB.
+    //down we will persist this data in DB.*/
 
 
 }
