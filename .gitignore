@@ -34,3 +34,4 @@ build/
 employeedb.mv.db
 data/employeedb.mv.db
 data/employeedb.mv.db
+logs/application.log
