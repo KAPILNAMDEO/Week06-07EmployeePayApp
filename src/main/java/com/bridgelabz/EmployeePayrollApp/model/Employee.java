@@ -5,6 +5,7 @@ package com.bridgelabz.EmployeePayrollApp.model;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "employee_payroll")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
