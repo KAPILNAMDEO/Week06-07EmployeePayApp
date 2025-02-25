@@ -12,4 +12,9 @@ public class EmployeePayrollAppApplication {
 		ApplicationContext context = SpringApplication.run(EmployeePayrollAppApplication.class, args);
 		log.info("Employee Payroll Application has started successfully in enviroment: {}", context.getEnvironment().getProperty("environment"));
 	}
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> Section1_UC01-EmployeePayrollApp

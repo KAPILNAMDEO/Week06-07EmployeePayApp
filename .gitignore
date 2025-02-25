@@ -31,7 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+<<<<<<< HEAD
 employeedb.mv.db
 data/employeedb.mv.db
 data/employeedb.mv.db
 logs/application.log
+=======
+logs/
+>>>>>>> Section1_UC01-EmployeePayrollApp
