@@ -23,7 +23,8 @@ public class EmployeeService {
         return repository.findAll();
     }
     public Employee getEmployeeById(Long id) {
-        return repository.findById(id).orElse(null);
+        return repository.findById(id)
+                .orElseThrow(() -> new EmployeeNotFoundException("Employee not found with ID: " + id));
     }
     public Employee saveEmployee(EmployeeDTO employeeDTO) {
         Employee employee = new Employee(employeeDTO.getName(), employeeDTO.getSalary());
