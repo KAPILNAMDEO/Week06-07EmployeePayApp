@@ -38,3 +38,30 @@
 2025-02-25 11:06:31 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-02-25 11:06:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-02-25 11:06:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-02-25 11:47:08 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:53] - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 18160 (C:\Users\HI\IdeaProjects\projectcapgemini\Week06-07EmployeePayrollApp\EmployeePayrollApp\target\classes started by HI in C:\Users\HI\IdeaProjects\projectcapgemini\Week06-07EmployeePayrollApp\EmployeePayrollApp)
+2025-02-25 11:47:08 [DEBUG][restartedMain] [c.b.E.EmployeePayrollAppApplication:54] - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25 11:47:08 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:658] - The following 1 profile is active: "dev"
+2025-02-25 11:47:13 [WARN][restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:241] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25 11:47:13 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:59] - Started EmployeePayrollAppApplication in 6.149 seconds (process running for 6.946)
+2025-02-25 11:47:13 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:13] - Employee Payroll Application has started successfully
+2025-02-25 11:51:14 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:53] - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 20028 (C:\Users\HI\IdeaProjects\projectcapgemini\Week06-07EmployeePayrollApp\EmployeePayrollApp\target\classes started by HI in C:\Users\HI\IdeaProjects\projectcapgemini\Week06-07EmployeePayrollApp\EmployeePayrollApp)
+2025-02-25 11:51:14 [DEBUG][restartedMain] [c.b.E.EmployeePayrollAppApplication:54] - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25 11:51:14 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:658] - The following 1 profile is active: "dev"
+2025-02-25 11:51:18 [WARN][restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:241] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25 11:51:19 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:59] - Started EmployeePayrollAppApplication in 5.122 seconds (process running for 5.774)
+2025-02-25 11:51:19 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:13] - Employee Payroll Application has started successfully
+2025-02-25 12:01:32 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:53] - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 12688 (C:\Users\HI\IdeaProjects\projectcapgemini\Week06-07EmployeePayrollApp\EmployeePayrollApp\target\classes started by HI in C:\Users\HI\IdeaProjects\projectcapgemini\Week06-07EmployeePayrollApp\EmployeePayrollApp)
+2025-02-25 12:01:32 [DEBUG][restartedMain] [c.b.E.EmployeePayrollAppApplication:54] - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25 12:01:32 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:658] - The following 1 profile is active: "dev"
+2025-02-25 12:01:37 [WARN][restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:241] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25 12:01:37 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:59] - Started EmployeePayrollAppApplication in 5.255 seconds (process running for 5.82)
+2025-02-25 12:01:37 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:13] - Employee Payroll Application has started successfully in enviroment :DEV
+2025-02-25 12:03:17 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:53] - Starting EmployeePayrollAppApplication using Java 23.0.1 with PID 18188 (C:\Users\HI\IdeaProjects\projectcapgemini\Week06-07EmployeePayrollApp\EmployeePayrollApp\target\classes started by HI in C:\Users\HI\IdeaProjects\projectcapgemini\Week06-07EmployeePayrollApp\EmployeePayrollApp)
+2025-02-25 12:03:17 [DEBUG][restartedMain] [c.b.E.EmployeePayrollAppApplication:54] - Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-02-25 12:03:17 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:658] - The following 1 profile is active: "dev"
+2025-02-25 12:03:20 [WARN][restartedMain] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:241] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-25 12:03:21 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:59] - Started EmployeePayrollAppApplication in 4.547 seconds (process running for 5.102)
+2025-02-25 12:03:21 [INFO][restartedMain] [c.b.E.EmployeePayrollAppApplication:13] - Employee Payroll Application has started successfully in enviroment: DEV
+2025-02-25 12:09:15 [DEBUG][http-nio-8080-exec-2] [o.h.SQL:135] - select e1_0.id,e1_0.name,e1_0.salary from employee e1_0
+2025-02-25 12:09:28 [DEBUG][http-nio-8080-exec-4] [o.h.SQL:135] - insert into employee (name,salary,id) values (?,?,default)
+2025-02-25 12:09:35 [DEBUG][http-nio-8080-exec-5] [o.h.SQL:135] - select e1_0.id,e1_0.name,e1_0.salary from employee e1_0
