@@ -46,4 +46,12 @@ public class EmployeeController {
         service.deleteEmployee(id);
         return ResponseEntity.ok("Employee deleted successfully");
     }
+
+    //section5 UC-6
+    @GetMapping("/department/{department}")
+    public ResponseEntity<List<Employee>> getEmployeesByDepartment(@PathVariable String department) {
+        List<Employee> employees = service.getEmployeesByDepartment(department);
+        return ResponseEntity.ok(employees);
+    }
+
 }

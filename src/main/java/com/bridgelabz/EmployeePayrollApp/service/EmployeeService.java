@@ -14,7 +14,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @Slf4j
 @Service
-public class EmployeeService  {
+public class EmployeeService implements IEmployeeService {
     //uc2
 
     @Autowired
@@ -32,6 +32,15 @@ public class EmployeeService  {
         employee = new Employee(employeeDTO);
         log.debug("Employee Data: " + employee.toString());
         return repository.save(employee);
+    }
+
+    @Override
+    public List<Employee>getEmployeesByDepartment(String department){
+        List<Employee> employees = repository.findEmployeeByDepartment(department);
+        if (employees.isEmpty()) {
+            throw new EmployeeNotFoundException("No employees found in " + department + " department.");
+        }
+        return employees;
     }
 
     public Employee updateEmployee(Long id, EmployeeDTO employeeDTO) {
