@@ -13,8 +13,11 @@ import java.util.List;
 @Table(name = "employee_payroll")
 public @Data class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "employee_id")
     private Long id;
+
+    @Column(name = "name")
     private String name;
     private double salary;
     private String gender;
@@ -22,6 +25,9 @@ public @Data class Employee {
     private String note;
     private String profilePic;
 
+    @ElementCollection
+    @CollectionTable(name = "employee_department",joinColumns = @JoinColumn(name = "id"))
+    @Column(name = "department")
     private List<String>departments;
 
     public Employee() {}
