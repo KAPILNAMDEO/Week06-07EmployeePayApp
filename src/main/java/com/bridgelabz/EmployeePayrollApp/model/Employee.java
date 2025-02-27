@@ -32,8 +32,8 @@ public @Data class Employee {
 
     public Employee() {}
 
-    public Employee(Long id, EmployeeDTO employeeDTO) {
-        this.id=id;
+    public Employee(EmployeeDTO employeeDTO) {
+
         this.name = employeeDTO.name;
         this.salary = employeeDTO.salary;
         this.gender=employeeDTO.gender;

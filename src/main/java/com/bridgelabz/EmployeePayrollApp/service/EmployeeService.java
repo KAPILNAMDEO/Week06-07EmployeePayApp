@@ -4,6 +4,7 @@ import com.bridgelabz.EmployeePayrollApp.dto.EmployeeDTO;
 import com.bridgelabz.EmployeePayrollApp.model.Employee;
 import com.bridgelabz.EmployeePayrollApp.repository.EmployeeRepository;
 import com.bridgelabz.EmployeePayrollApp.validation.EmployeeNotFoundException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
-
+@Slf4j
 @Service
 public class EmployeeService  {
     //uc2
@@ -27,14 +28,9 @@ public class EmployeeService  {
                 .orElseThrow(() -> new EmployeeNotFoundException("Employee not found with ID: " + id));
     }
     public Employee saveEmployee(EmployeeDTO employeeDTO) {
-        Employee employee = new Employee(); employee.setName(employeeDTO.getName());
-        employee.setSalary(employeeDTO.getSalary());
-        employee.setGender(employeeDTO.getGender());
-        employee.setStartDate(employeeDTO.getStartDate());
-        employee.setNote(employeeDTO.getNote());
-        employee.setProfilePic(employeeDTO.getProfilePic());
-        employee.setDepartments(employeeDTO.getDepartment());
-
+        Employee employee = null;
+        employee = new Employee(employeeDTO);
+        log.debug("Employee Data: " + employee.toString());
         return repository.save(employee);
     }
 
